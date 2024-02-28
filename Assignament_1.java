@@ -28,33 +28,38 @@ class SumOfSquares {
 /* 2.Write  program to produce two sums: sum of odd numbers and sum of even numbers from 1 to 100. Also computer their absolute difference.*/
 
 /*
+import java.util.Scanner;
+
 class SumDifference {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int start = 1;
-        int end = 100;
+        // Prompt user for input
+        System.out.print("Enter the start of the range: ");
+        int start = scanner.nextInt();
 
+        System.out.print("Enter the end of the range: ");
+        int end = scanner.nextInt();
 
         int sumOfOdds = 0;
         int sumOfEvens = 0;
 
         for (int i = start; i <= end; i++) {
             if (i % 2 == 0) {
-
                 sumOfEvens += i;
             } else {
-
                 sumOfOdds += i;
             }
         }
 
-
         int absoluteDifference = Math.abs(sumOfOdds - sumOfEvens);
-
 
         System.out.println("Sum of odd numbers: " + sumOfOdds);
         System.out.println("Sum of even numbers: " + sumOfEvens);
         System.out.println("Absolute difference: " + absoluteDifference);
+
+        // Close the scanner
+        scanner.close();
     }
 }
  */
